@@ -1,3 +1,24 @@
+/* Web Fonts included in the site */
+@font-face {
+  font-family: "Quicksand Regular";
+  src: url("../../assets/fonts/quicksand/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand Bold";
+  src: url("../../assets/fonts/quicksand/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand Medium";
+  src: url("../../assets/fonts/quicksand/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand SemiBold";
+  src: url("../../assets/fonts/quicksand/Quicksand-SemiBold.ttf");
+}
+
 header {
   padding: 0 5px;
   position: fixed;
@@ -41,7 +62,7 @@ header {
   width: 100%;
   position: absolute;
   height: 2px;
-  background-color: #02bf23;
+  background-color: #007bbd;
   bottom: -23px;
   left: 0;
   transform: scaleY(0);
@@ -50,7 +71,7 @@ header {
 }
 
 .navbar .nav-group ul li a:hover {
-  color: #02bf23;
+  color: #007bbd;
 }
 
 .navbar .nav-group ul li a:hover::after {
@@ -83,7 +104,7 @@ header {
   top: 40px;
   box-shadow: 15px 15px 30px #1414142a, 0px -3px 12px #adadad1c;
   border-radius: 0 0 8px 8px;
-  border-bottom: 2px solid #02bf23;
+  border-bottom: 2px solid #007bbd;
   min-width: 180px;
 }
 
@@ -105,7 +126,7 @@ header {
 .navbar .end-tabs .navicon-link.nav-user ul.dropdown li {
   line-height: 30px;
   border-bottom: 1.5px solid #f1f1f1;
-  font: normal normal 15px/20px "Lato Regular", sans-serif;
+  font: normal normal 15px/20px "Quicksand Regular", sans-serif;
   padding: 12px 18px;
   cursor: pointer;
 }
@@ -130,18 +151,18 @@ button.btn, .second-button, .explore-wrapper .explore-btn a button.second, .thir
   background-color: transparent;
   border-radius: 5px;
   color: #ffffff;
-  font: normal bold 14px "Lato Bold", sans-serif;
+  font: normal bold 14px "Quicksand Bold", sans-serif;
   margin-right: 12px;
   padding: 12px 25px;
   text-transform: uppercase;
-  border: 2px solid #02bf23;
+  border: 2px solid #007bbd;
   cursor: pointer;
   position: relative;
 }
 
 button.btn::before, .second-button::before, .explore-wrapper .explore-btn a button.second::before, .third-button::before, .explore-wrapper .explore-btn a button.third::before, .fourth-button::before, .explore-wrapper .explore-btn a button.fourth::before, .app-download .app-info .app-btns a.app-btn::before, .explore-wrapper .explore-btn a button::before, .page-bottom .bottom-inner .newsletter-box .newsletter-field .newsletter-input a::before {
   content: "";
-  background-color: #02bf23;
+  background-color: #007bbd;
   position: absolute;
   top: 0;
   left: 0;
@@ -154,7 +175,7 @@ button.btn::before, .second-button::before, .explore-wrapper .explore-btn a butt
 }
 
 button.btn:hover, .second-button:hover, .third-button:hover, .fourth-button:hover, .app-download .app-info .app-btns a.app-btn:hover, .explore-wrapper .explore-btn a button:hover, .page-bottom .bottom-inner .newsletter-box .newsletter-field .newsletter-input a:hover {
-  color: #02bf23;
+  color: #007bbd;
 }
 
 button.btn:hover::before, .second-button:hover::before, .third-button:hover::before, .fourth-button:hover::before, .app-download .app-info .app-btns a.app-btn:hover::before, .explore-wrapper .explore-btn a button:hover::before, .page-bottom .bottom-inner .newsletter-box .newsletter-field .newsletter-input a:hover::before {
@@ -218,12 +239,12 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .web-banner .banner-content .info-area h1 {
-  font: normal bold 50px/60px "Lato Bold", sans-serif;
+  font: normal bold 50px/60px "Quicksand Bold", sans-serif;
   margin-bottom: 20px;
 }
 
 .web-banner .banner-content .info-area p {
-  font: normal normal 16px/22px "Metropolis Regular", sans-serif;
+  font: normal normal 16px/22px "Quicksand Regular", sans-serif;
   max-width: 500px;
   margin-bottom: 20px;
 }
@@ -235,36 +256,36 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 .web-banner .banner-content .info-area .banner-searcher input[type="text"] {
   padding: 10px 20px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #02bf23;
+  border: 2px solid #007bbd;
   border-right: none;
-  font: normal normal 15px "Lato Regular", sans-serif;
+  font: normal normal 15px "Quicksand Regular", sans-serif;
   width: 80%;
   position: relative;
-  color: #02bf23;
+  color: #007bbd;
 }
 
 .web-banner .banner-content .info-area .banner-searcher input[type="text"]::placeholder {
-  font: normal normal 15px "Lato Regular", sans-serif;
-  color: #02bf23;
+  font: normal normal 15px "Quicksand Regular", sans-serif;
+  color: #007bbd;
 }
 
 .web-banner .banner-content .info-area .banner-searcher a > button.banner-searcher {
   padding: 10px 20px;
-  border: 2px solid #02bf23;
-  font: normal bold 13px/18px "Lato Bold", sans-serif;
+  border: 2px solid #007bbd;
+  font: normal bold 13px/18px "Quicksand Bold", sans-serif;
   text-transform: uppercase;
   position: absolute;
   cursor: pointer;
   width: auto;
   border-radius: 0 4px 4px 0;
-  background-color: #02bf23;
+  background-color: #007bbd;
   color: #ffffff;
   transition: background-color 0.15s ease;
 }
 
 .web-banner .banner-content .info-area .banner-searcher a > button.banner-searcher:hover {
-  background-color: #00a105;
-  border-color: #00a105;
+  background-color: #005d9f;
+  border-color: #005d9f;
 }
 
 .web-banner .banner-content .info-area .banner-btns {
@@ -282,14 +303,14 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   font-size: 25px;
   text-align: center;
   background-color: transparent;
-  color: #02bf23;
-  border: 2px solid #02bf23;
+  color: #007bbd;
+  border: 2px solid #007bbd;
   margin-left: 4px;
   transition: all 0.4s ease;
 }
 
 .web-banner .banner-content .info-area .banner-btns button#play-btn:hover {
-  background-color: #02bf23;
+  background-color: #007bbd;
   color: #ffffff;
 }
 
@@ -336,12 +357,12 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   width: 25%;
   height: 2px;
   position: absolute;
-  background-color: #02bf23;
+  background-color: #007bbd;
   left: 0;
 }
 
 .web-banner .banner-bottom .bottom-grid .grid-item h3 {
-  font: normal bold 20px/15px "Lato Bold", sans-serif;
+  font: normal bold 20px/15px "Quicksand Bold", sans-serif;
 }
 
 .web-banner .banner-bottom .bottom-grid .grid-item p {
@@ -352,7 +373,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 
 .section-title {
   text-align: center;
-  font-family: "Lato Regular", sans-serif;
+  font-family: "Quicksand Regular", sans-serif;
   margin-bottom: 25px;
 }
 
@@ -362,15 +383,15 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .section-title h1 strong {
-  font-family: "Lato Bold", sans-serif;
+  font-family: "Quicksand Bold", sans-serif;
   font-size: 32px;
-  color: #02bf23;
+  color: #007bbd;
   position: relative;
 }
 
 .section-title h1 strong::after {
   content: "";
-  background-color: #02bf23;
+  background-color: #007bbd;
   width: 100%;
   height: 2px;
   position: absolute;
@@ -379,7 +400,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .section-title p.sub-title {
-  font: normal normal 16px/20px "Metropolis Regular", sans-serif;
+  font: normal normal 16px/20px "Quicksand Regular", sans-serif;
   margin-top: 20px;
 }
 
@@ -393,13 +414,13 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .about-us .about-info .heading-info {
-  font: normal bold 35px/45px "Lato Bold", sans-serif;
+  font: normal bold 35px/45px "Quicksand Bold", sans-serif;
   max-width: 580px;
 }
 
 .about-us .about-info p {
   margin: 18px 0;
-  font: normal normal 16px/22px "Metropolis Regular", sans-serif;
+  font: normal normal 16px/22px "Quicksand Regular", sans-serif;
   max-width: 580px;
 }
 
@@ -433,11 +454,11 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   flex-wrap: nowrap;
   width: 90px;
   height: 90px;
-  border: 2px dotted #02bf23;
+  border: 2px dotted #007bbd;
   border-radius: 5px;
   text-align: center;
   font-size: 25px;
-  color: #02bf23;
+  color: #007bbd;
 }
 
 .company-stats .stat-item .stat-info {
@@ -448,12 +469,12 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .company-stats .stat-item .stat-info h2 {
-  font: normal normal 35px/45px "Metropolis Regular", sans-serif;
+  font: normal normal 35px/45px "Quicksand Regular", sans-serif;
 }
 
 .company-stats .stat-item .stat-info h2 span {
-  color: #02bf23;
-  font: normal bold 35px/45px "Metropolis Bold", sans-serif;
+  color: #007bbd;
+  font: normal bold 35px/45px "Quicksand Bold", sans-serif;
 }
 
 .company-stats .stat-item .stat-info em {
@@ -475,13 +496,13 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .our-services .service-info .heading-info h3 {
-  font: normal bold 40px/50px "Lato Bold", sans-serif;
+  font: normal bold 40px/50px "Quicksand Bold", sans-serif;
   max-width: 500px;
 }
 
 .our-services .service-info p.info-text {
   margin: 18px 0;
-  font: normal normal 15px/22px "Metropolis Regular", sans-serif;
+  font: normal normal 15px/22px "Quicksand Regular", sans-serif;
   max-width: 600px;
 }
 
@@ -513,12 +534,12 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   display: block;
   font-size: 25px;
   color: #ffffff;
-  border: 2px solid #02bf23;
+  border: 2px solid #007bbd;
   border-radius: 50%;
   width: 52px;
   height: 50px;
   padding: 10px;
-  background-color: #02bf23;
+  background-color: #007bbd;
 }
 
 .our-services .service-info ul.service-list li.service-item .list-content i.first {
@@ -539,7 +560,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 .our-services .service-info ul.service-list li.service-item .list-content p {
   margin-left: 14px;
   max-width: 380px;
-  font: normal normal 14px/20px "Metropolis Regular", sans-serif;
+  font: normal normal 14px/20px "Quicksand Regular", sans-serif;
 }
 
 .testimonials {
@@ -569,7 +590,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   width: 70px;
   height: 65px;
   border-radius: 50%;
-  border: 2px solid #02bf23;
+  border: 2px solid #007bbd;
 }
 
 .testimonials .carousel-cell .testimony .mid-content {
@@ -596,7 +617,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .testimonials .carousel-cell .testimony .mid-content p {
-  font: normal normal 14px/20px "Metropolis Regular", sans-serif;
+  font: normal normal 14px/20px "Quicksand Regular", sans-serif;
 }
 
 .testimonials .carousel-cell .testimony .end-credits {
@@ -611,18 +632,18 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 .testimonials .carousel-cell .testimony .end-credits i {
   display: inline-block;
   transform: scaleX(-1);
-  color: #02bf23;
+  color: #007bbd;
 }
 
 .testimonials .carousel-cell .testimony .end-credits cite {
   margin-left: 10px;
-  font-family: "Lato Regular", sans-serif;
+  font-family: "Quicksand Regular", sans-serif;
 }
 
 .testimonials .carousel-cell .testimony .end-credits cite b {
-  font: normal bold 20px/20px "Lato Bold", sans-serif;
+  font: normal bold 20px/20px "Quicksand Bold", sans-serif;
   display: block;
-  color: #02bf23;
+  color: #007bbd;
 }
 
 .testimonials .flickity-page-dots {
@@ -642,7 +663,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .testimonials .flickity-page-dots .dot.is-selected {
-  background-color: #02bf23;
+  background-color: #007bbd;
 }
 
 .testimonials .flickity-page-dots .dot.is-selected::before {
@@ -650,7 +671,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid #02bf23;
+  border: 2px solid #007bbd;
   background-color: transparent;
   position: absolute;
   left: -7.5px;
@@ -671,17 +692,17 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 
 .why-us .info-side h4 {
   text-transform: uppercase;
-  color: #02bf23;
-  font: normal normal 20px/40px "Lato Regular", sans-serif;
+  color: #007bbd;
+  font: normal normal 20px/40px "Quicksand Regular", sans-serif;
 }
 
 .why-us .info-side h2.heading-text {
-  font: normal bold 32px/35px "Lato Bold", sans-serif;
+  font: normal bold 32px/35px "Quicksand Bold", sans-serif;
   max-width: 500px;
 }
 
 .why-us .info-side > p {
-  font: normal normal 16px/21px "Metropolis Regular", sans-serif;
+  font: normal normal 16px/21px "Quicksand Regular", sans-serif;
   padding: 16px 0;
   border-bottom: 1.75px solid #f1f1f1;
 }
@@ -706,7 +727,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 
 .why-us .info-side dl > dd .media-list .data-icon {
   padding: 15px 15px 12px 15px;
-  background-color: #02bf23;
+  background-color: #007bbd;
   display: inline-block;
   clip-path: circle();
   font-size: 20px;
@@ -719,17 +740,17 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .why-us .info-side dl > dd .media-list .data-info > p {
-  font: normal normal 16px/24px "Lato Regular", sans-serif;
+  font: normal normal 16px/24px "Quicksand Regular", sans-serif;
 }
 
 .why-us .info-side dl > dd .media-list .data-info > strong {
-  font: normal bold 18px/20px "Lato Bold", sans-serif;
+  font: normal bold 18px/20px "Quicksand Bold", sans-serif;
   text-transform: capitalize;
 }
 
 .why-us .info-side dl > dd .bottom-text {
   margin-top: 20px;
-  font: normal normal 16px/20px "Metropolis Regular", sans-serif;
+  font: normal normal 16px/20px "Quicksand Regular", sans-serif;
   width: 100%;
   padding: 0 5px;
 }
@@ -751,17 +772,17 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 
 .app-download .app-info > span {
   text-transform: uppercase;
-  font: normal normal 18px/20px "Lato Regular", sans-serif;
+  font: normal normal 18px/20px "Quicksand Regular", sans-serif;
 }
 
 .app-download .app-info > h3 {
-  font: normal bold 35px/40px "Lato Bold", sans-serif;
+  font: normal bold 35px/40px "Quicksand Bold", sans-serif;
   max-width: 500px;
   margin: 16px 0;
 }
 
 .app-download .app-info > p {
-  font: normal normal 16px/22px "Metropolis Regular", sans-serif;
+  font: normal normal 16px/22px "Quicksand Regular", sans-serif;
   max-width: 550px;
   margin-top: 20px;
 }
@@ -794,7 +815,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .app-download .app-info .app-btns a.app-btn span {
-  font-family: "Lato Bold", sans-serif;
+  font-family: "Quicksand Bold", sans-serif;
   display: inline-block;
   margin-bottom: 7px;
   margin-left: 4px;
@@ -888,11 +909,11 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .explore-wrapper .explore-card .text-content h2 {
-  font: normal bold 20px/40px "Lato Bold", sans-serif;
+  font: normal bold 20px/40px "Quicksand Bold", sans-serif;
 }
 
 .explore-wrapper .explore-card .text-content p {
-  font: normal normal 15px/20px "Metropolis Regular", sans-serif;
+  font: normal normal 15px/20px "Quicksand Regular", sans-serif;
   padding: 5px 1px;
   text-align: center;
 }
@@ -937,11 +958,11 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   position: relative;
   cursor: pointer;
   text-transform: uppercase;
-  font: normal bold 14px/18px "Lato Bold", sans-serif;
+  font: normal bold 14px/18px "Quicksand Bold", sans-serif;
 }
 
 .featured-artisans .btn-group button.clicked {
-  border-bottom: 2px solid #02bf23;
+  border-bottom: 2px solid #007bbd;
 }
 
 .featured-artisans .card-wrapper {
@@ -986,7 +1007,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   position: absolute;
   width: 69px;
   height: 32px;
-  background-color: #02bf23;
+  background-color: #007bbd;
   border-radius: 0 0 150px 150px;
   bottom: 0;
   left: -2px;
@@ -1008,7 +1029,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 .featured-artisans .card-wrapper .single-card .card-img-box img.card-img {
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #02bf23;
+  border-bottom: 2px solid #007bbd;
   transition: transform 0.4s ease;
 }
 
@@ -1017,11 +1038,11 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .featured-artisans .card-wrapper .single-card .card-desc h2 {
-  font: normal bold 20px/25px "Lato Bold", sans-serif;
+  font: normal bold 20px/25px "Quicksand Bold", sans-serif;
 }
 
 .featured-artisans .card-wrapper .single-card .card-desc p {
-  font: normal normal 14px/20px "Metropolis Regular", sans-serif;
+  font: normal normal 14px/20px "Quicksand Regular", sans-serif;
 }
 
 .featured-artisans .card-wrapper .single-card .card-desc cite {
@@ -1049,8 +1070,8 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   padding: 7px 12px;
   border: 0;
   border-radius: 3px;
-  font: normal bold 13px "Lato Bold", sans-serif;
-  background-color: #02bf23;
+  font: normal bold 13px "Quicksand Bold", sans-serif;
+  background-color: #007bbd;
   color: #ffffff;
 }
 
@@ -1082,14 +1103,14 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 
 .home-category .categories .category-item i {
   display: block;
-  color: #02bf23;
+  color: #007bbd;
   margin-bottom: 20px;
   font-size: 30px;
 }
 
 .home-category .categories .category-item b {
   display: block;
-  font: normal bold 18px/20px "Lato Regular", sans-serif;
+  font: normal bold 18px/20px "Quicksand Regular", sans-serif;
   text-transform: capitalize;
 }
 
@@ -1103,11 +1124,11 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .sponsor-group .brand-title h1 {
-  font: normal bold 27px/30px "Lato Bold", sans-serif;
+  font: normal bold 27px/30px "Quicksand Bold", sans-serif;
 }
 
 .sponsor-group .brand-title h1 span {
-  color: #02bf23;
+  color: #007bbd;
 }
 
 .sponsor-group .brand-sponsors {
@@ -1145,13 +1166,13 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .page-bottom .bottom-inner .newsletter-box .newsletter-cta h3 {
-  font: normal bold 25px/45px "Lato Bold", sans-serif;
+  font: normal bold 25px/45px "Quicksand Bold", sans-serif;
   text-transform: capitalize;
   color: #ffffff;
 }
 
 .page-bottom .bottom-inner .newsletter-box .newsletter-cta h3 span {
-  color: #02bf23;
+  color: #007bbd;
 }
 
 .page-bottom .bottom-inner .newsletter-box .newsletter-field {
@@ -1172,14 +1193,14 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
   border-radius: 4px 0 0 4px;
   border: 2px solid #ffffff;
   border-right: none;
-  font: normal normal 16px "Lato Regular", sans-serif;
+  font: normal normal 16px "Quicksand Regular", sans-serif;
   min-width: 500px;
   color: #ffffff;
   background-color: transparent;
 }
 
 .page-bottom .bottom-inner .newsletter-box .newsletter-field .newsletter-input input::placeholder {
-  font: normal normal 16px "Lato Regular", sans-serif;
+  font: normal normal 16px "Quicksand Regular", sans-serif;
   color: #ffffff;
 }
 
@@ -1214,7 +1235,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .page-bottom .bottom-inner footer .footer-inner .about-col p {
-  font: normal normal 16px/20px "Metropolis Regular", sans-serif;
+  font: normal normal 16px/20px "Quicksand Regular", sans-serif;
   margin-top: 10px;
 }
 
@@ -1244,7 +1265,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 
 .page-bottom .bottom-inner footer .footer-inner .quick-links h4 {
   text-transform: uppercase;
-  font: normal bold 18px/20px "Lato Bold", sans-serif;
+  font: normal bold 18px/20px "Quicksand Bold", sans-serif;
   margin-bottom: 12.5px;
 }
 
@@ -1253,7 +1274,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .page-bottom .bottom-inner footer .footer-inner .quick-links ul li a {
-  font: normal normal 16px/20px "Lato Regular", sans-serif;
+  font: normal normal 16px/20px "Quicksand Regular", sans-serif;
   color: #ffffff;
 }
 
@@ -1263,7 +1284,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 
 .page-bottom .bottom-inner footer .footer-inner .contact-col h4 {
   text-transform: uppercase;
-  font: normal bold 18px/20px "Lato Bold", sans-serif;
+  font: normal bold 18px/20px "Quicksand Bold", sans-serif;
   margin-bottom: 12.5px;
 }
 
@@ -1283,7 +1304,7 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .page-bottom .bottom-inner footer .footer-inner .contact-col dl dd p {
-  font: normal normal 16px/20px "Lato Regular", sans-serif;
+  font: normal normal 16px/20px "Quicksand Regular", sans-serif;
   margin-left: 10px;
 }
 
@@ -1295,10 +1316,12 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 
 .current {
   bottom: -2px;
-  color: #02bf23;
+  color: #007bbd;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -1310,7 +1333,7 @@ html {
 }
 
 body {
-  font-family: "Metropolis Regular", sans-serif;
+  font-family: "Quicksand Regular", sans-serif;
   overflow-x: hidden;
   position: relative;
 }
@@ -1320,11 +1343,14 @@ a {
   color: #111111;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-cite, em, i {
+cite,
+em,
+i {
   font-style: normal;
 }
 
@@ -1338,7 +1364,7 @@ cite, em, i {
 
 ::selection {
   color: #ffffff;
-  background-color: #02d828;
+  background-color: #008cd7;
 }
 
 .nav-offset {
@@ -1353,7 +1379,8 @@ cite, em, i {
   transition: box-shadow 200ms ease-in-out;
 }
 
-.scrolling-active a, .scrolling-active i {
+.scrolling-active a,
+.scrolling-active i {
   color: #111111 !important;
 }
 

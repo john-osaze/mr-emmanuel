@@ -10,71 +10,78 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  }
-  
-  *, *::before, *::after {
+}
+
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: inherit;
-  }
-  
-  html {
+}
+
+html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-  }
-  
-  body{
-	font-family: $metropolis;
+}
+
+body {
+	font-family: $quicksand;
 	overflow-x: hidden;
 	position: relative;
-  }
-  
-  a{
+}
+
+a {
 	text-decoration: none;
 	color: $black;
-  }
-  
-  ul, ol{
+}
+
+ul,
+ol {
 	list-style: none;
-  }
-  
-  cite, em, i{
+}
+
+cite,
+em,
+i {
 	font-style: normal;
-  }
-  
-  .container{
+}
+
+.container {
 	padding: 0 40px;
-  }
-  
-  :focus{
+}
+
+:focus {
 	outline: none;
-  }
-  
-  ::selection{
+}
+
+::selection {
 	color: $white;
 	background-color: lighten($main, 5%);
-  }
-  
-  //JS CLASSES
-  .nav-offset{
+}
+
+//JS CLASSES
+.nav-offset {
 	background-color: $white;
 	box-shadow: 0 5px 25px #11111115;
 	transition: box-shadow 200ms ease-in-out;
-  }
-  
-  .scrolling-active{
+}
+
+.scrolling-active {
 	background-color: $white;
 	box-shadow: 0 5px 25px #11111115;
 	transition: box-shadow 200ms ease-in-out;
-	a,i{
-	  color: $black !important;
+
+	a,
+	i {
+		color: $black !important;
 	}
-  }
-  
-  #preloader{
+}
+
+#preloader {
 	position: fixed;
 	width: 100%;
 	height: 100vh;
 	// background: $white url(../images/preloader.gif) center no-repeat;
 	z-index: 1000;
-  }
+}
