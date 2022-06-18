@@ -198,7 +198,6 @@ button.btn:hover::before, .second-button:hover::before, .third-button:hover::bef
 }
 
 .web-banner {
-  background: linear-gradient(to left, #ffffff80, #ffffff80), url(../images/banner-image.jpg) center no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -1362,7 +1361,6 @@ cite, em, i {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #ffffff url(../images/preloader.gif) center no-repeat;
   z-index: 1000;
 }
 /*# sourceMappingURL=styles.css.map */

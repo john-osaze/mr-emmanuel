@@ -21,13 +21,13 @@ header {
 		  position: relative;
 		  a {
 			display: block;
-			color: $secondary;
+			color: $black;
 			&::after {
 			  content: "";
 			  width: 100%;
 			  position: absolute;
 			  height: 2px;
-			  background-color: $tertiary;
+			  background-color: $main;
 			  bottom: -23px;
 			  left: 0;
 			  transform: scaleY(0);
@@ -36,7 +36,7 @@ header {
 			}
   
 			&:hover {
-			  color: $tertiary;
+			  color: $main;
 			  &::after {
 				transform: scaleY(1);
 			  }
@@ -55,18 +55,18 @@ header {
   
 		i {
 		  cursor: pointer;
-		  color: $secondary;
+		  color: $black;
 		}
 		&.nav-user {
 		  ul.dropdown {
 			display: none;
 			position: absolute;
-			background-color: $primary;
+			background-color: $white;
 			left: -80px;
 			top: 40px;
 			box-shadow: $shadow, 0px -3px 12px #adadad1c;
 			border-radius: 0 0 8px 8px;
-			border-bottom: 2px solid $tertiary;
+			border-bottom: 2px solid $main;
 			min-width: 180px;
 			&::before {
 			  content: "";
@@ -76,7 +76,7 @@ header {
 			  position: absolute;
 			  border-top: 8px solid transparent;
 			  border-bottom: 8px solid transparent;
-			  border-right: 8px solid $primary;
+			  border-right: 8px solid $white;
 			  left: 85px;
 			  top: -12px;
 			  transform: rotate(90deg);
@@ -86,7 +86,7 @@ header {
 			li {
 			  line-height: 30px;
 			  border-bottom: 1.5px solid $borderColor;
-			  font: normal normal 15px/20px $lato;
+			  font: normal normal 15px/20px $quicksand;
 			  padding: 12px 18px;
 			  cursor: pointer;
 			  &:last-child {
@@ -115,18 +115,18 @@ header {
   button.btn {
 	background-color: transparent;
 	border-radius: 5px;
-	color: $primary;
-	font: normal bold 14px $latobold;
+	color: $white;
+	font: normal bold 14px $quicksandBold;
 	margin-right: 12px;
 	padding: 12px 25px;
 	text-transform: uppercase;
-	border: 2px solid $tertiary;
+	border: 2px solid $main;
 	cursor: pointer;
 	position: relative;
   
 	&::before {
 	  content: "";
-	  background-color: $tertiary;
+	  background-color: $main;
 	  position: absolute;
 	  top: 0;
 	  left: 0;
@@ -139,7 +139,7 @@ header {
 	}
   
 	&:hover {
-	  color: $tertiary;
+	  color: $main;
 	  &::before {
 		transform: scaleY(0);
 	  }
@@ -180,8 +180,8 @@ header {
   }
   
   .web-banner {
-	background: linear-gradient(to left, #ffffff80, #ffffff80),
-	  url(../images/banner-image.jpg) center no-repeat;
+	// background: linear-gradient(to left, #ffffff80, #ffffff80),
+	//   url(../images/banner-image.jpg) center no-repeat;
 	background-size: cover;
 	position: relative;
 	width: 100%;
@@ -194,7 +194,7 @@ header {
 	  .info-area {
 		max-width: 570px;
 		h1 {
-		  font: normal bold 50px/60px $latobold;
+		  font: normal bold 50px/60px $quicksandBold;
 		  margin-bottom: 20px;
 		  // background: linear-gradient(to left, red, blue);
 		  // background-clip: text;
@@ -203,7 +203,7 @@ header {
 		}
   
 		p {
-		  font: normal normal 16px/22px $metropolis;
+		  font: normal normal 16px/22px $quicksand;
 		  max-width: 500px;
 		  margin-bottom: 20px;
 		}
@@ -213,34 +213,34 @@ header {
 		  input[type="text"] {
 			padding: 10px 20px;
 			border-radius: 4px 0 0 4px;
-			border: 2px solid $tertiary;
+			border: 2px solid $main;
 			border-right: none;
-			font: normal normal 15px $lato;
+			font: normal normal 15px $quicksand;
 			width: 80%;
 			position: relative;
-			color: $tertiary;
+			color: $main;
 			&::placeholder {
-			  font: normal normal 15px $lato;
-			  color: $tertiary;
+			  font: normal normal 15px $quicksand;
+			  color: $main;
 			}
 		  }
   
 		  a > button.banner-searcher {
 			padding: 10px 20px;
-			border: 2px solid $tertiary;
-			font: normal bold 13px/18px $latobold;
+			border: 2px solid $main;
+			font: normal bold 13px/18px $quicksandBold;
 			text-transform: uppercase;
 			position: absolute;
 			cursor: pointer;
 			width: auto;
 			border-radius: 0 4px 4px 0;
-			background-color: $tertiary;
-			color: $primary;
+			background-color: $main;
+			color: $white;
 			transition: background-color 0.15s ease;
   
 			&:hover {
-			  background-color: $tertiary - 30;
-			  border-color: $tertiary - 30;
+			  background-color: $main - 30;
+			  border-color: $main - 30;
 			}
 		  }
 		}
@@ -255,14 +255,14 @@ header {
 			font-size: 25px;
 			text-align: center;
 			background-color: transparent;
-			color: $tertiary;
-			border: 2px solid $tertiary;
+			color: $main;
+			border: 2px solid $main;
 			margin-left: 4px;
 			transition: all 0.4s ease;
   
 			&:hover {
-			  background-color: $tertiary;
-			  color: $primary;
+			  background-color: $main;
+			  color: $white;
 			}
 		  }
 		}
@@ -304,12 +304,12 @@ header {
 			width: 25%;
 			height: 2px;
 			position: absolute;
-			background-color: $tertiary;
+			background-color: $main;
 			left: 0;
 		  }
   
 		  h3 {
-			font: normal bold 20px/15px $latobold;
+			font: normal bold 20px/15px $quicksandBold;
 		  }
   
 		  p {
@@ -324,19 +324,19 @@ header {
   
   .section-title {
 	text-align: center;
-	font-family: $lato;
+	font-family: $quicksand;
 	margin-bottom: 25px;
 	h1 {
 	  font-weight: normal;
 	  font-size: 30px;
 	  strong {
-		font-family: $latobold;
+		font-family: $quicksandBold;
 		font-size: 32px;
-		color: $tertiary;
+		color: $main;
 		position: relative;
 		&::after {
 		  content: "";
-		  background-color: $tertiary;
+		  background-color: $main;
 		  width: 100%;
 		  height: 2px;
 		  position: absolute;
@@ -347,7 +347,7 @@ header {
 	}
   
 	p.sub-title {
-	  font: normal normal 16px/20px $metropolis;
+	  font: normal normal 16px/20px $quicksand;
 	  margin-top: 20px;
 	}
   }
@@ -357,13 +357,13 @@ header {
 	margin-bottom: 120px;
 	.about-info {
 	  .heading-info {
-		font: normal bold 35px/45px $latobold;
+		font: normal bold 35px/45px $quicksandBold;
 		max-width: 580px;
 	  }
   
 	  p {
 		margin: 18px 0;
-		font: normal normal 16px/22px $metropolis;
+		font: normal normal 16px/22px $quicksand;
 		max-width: 580px;
 	  }
   
@@ -384,11 +384,11 @@ header {
 		@include flexItems(column, center, center, nowrap);
 		width: 90px;
 		height: 90px;
-		border: 2px dotted $tertiary;
+		border: 2px dotted $main;
 		border-radius: 5px;
 		text-align: center;
 		font-size: 25px;
-		color: $tertiary;
+		color: $main;
 	  }
 	  // .stat-icon.second{
 	  //   border: 2px dotted $pink;
@@ -407,14 +407,14 @@ header {
   
 	  .stat-info {
 		text-align: left;
-		background-color: $primary;
+		background-color: $white;
 		position: relative;
 		left: -15px;
 		h2 {
-		  font: normal normal 35px/45px $metropolis;
+		  font: normal normal 35px/45px $quicksand;
 		  span {
-			color: $tertiary;
-			font: normal bold 35px/45px $metropolisbold;
+			color: $main;
+			font: normal bold 35px/45px $quicksandbold;
 		  }
 		}
   
@@ -435,14 +435,14 @@ header {
   
 	  .heading-info {
 		h3 {
-		  font: normal bold 40px/50px $latobold;
+		  font: normal bold 40px/50px $quicksandBold;
 		  max-width: 500px;
 		}
 	  }
   
 	  p.info-text {
 		margin: 18px 0;
-		font: normal normal 15px/22px $metropolis;
+		font: normal normal 15px/22px $quicksand;
 		max-width: 600px;
 	  }
   
@@ -450,7 +450,7 @@ header {
 		li.service-item {
 		  max-width: 480px;
 		  min-height: 100px;
-		  background-color: $primary;
+		  background-color: $white;
 		  box-shadow: 5px 5px 20px #1414142a;
 		  margin-bottom: 20px;
 		  border-radius: 15px;
@@ -466,13 +466,13 @@ header {
 			i {
 			  display: block;
 			  font-size: 25px;
-			  color: $primary;
-			  border: 2px solid $tertiary;
+			  color: $white;
+			  border: 2px solid $main;
 			  border-radius: 50%;
 			  width: 52px;
 			  height: 50px;
 			  padding: 10px;
-			  background-color: $tertiary;
+			  background-color: $main;
 			}
   
 			i.first {
@@ -493,7 +493,7 @@ header {
 			p {
 			  margin-left: 14px;
 			  max-width: 380px;
-			  font: normal normal 14px/20px $metropolis;
+			  font: normal normal 14px/20px $quicksand;
 			}
 		  }
 		}
@@ -523,12 +523,12 @@ header {
 			width: 70px;
 			height: 65px;
 			border-radius: 50%;
-			border: 2px solid $tertiary;
+			border: 2px solid $main;
 		  }
 		}
   
 		.mid-content {
-		  background-color: $primary;
+		  background-color: $white;
 		  box-shadow: 10px 10px 20px #1414142a;
 		  padding: 22px 25px;
 		  border-radius: 10px;
@@ -542,13 +542,13 @@ header {
 			position: absolute;
 			border-top: 8px solid transparent;
 			border-bottom: 8px solid transparent;
-			border-right: 8px solid $primary;
+			border-right: 8px solid $white;
 			left: 40px;
 			bottom: -12px;
 			transform: rotate(-90deg);
 		  }
 		  p {
-			font: normal normal 14px/20px $metropolis;
+			font: normal normal 14px/20px $quicksand;
 		  }
 		}
   
@@ -558,15 +558,15 @@ header {
 		  i {
 			display: inline-block;
 			transform: scaleX(-1);
-			color: $tertiary;
+			color: $main;
 		  }
 		  cite {
 			margin-left: 10px;
-			font-family: $lato;
+			font-family: $quicksand;
 			b {
-			  font: normal bold 20px/20px $latobold;
+			  font: normal bold 20px/20px $quicksandBold;
 			  display: block;
-			  color: $tertiary;
+			  color: $main;
 			}
 		  }
 		}
@@ -585,13 +585,13 @@ header {
 		position: relative;
   
 		&.is-selected {
-		  background-color: $tertiary;
+		  background-color: $main;
 		  &::before {
 			content: "";
 			width: 20px;
 			height: 20px;
 			border-radius: 50%;
-			border: 2px solid $tertiary;
+			border: 2px solid $main;
 			background-color: transparent;
 			position: absolute;
 			left: -7.5px;
@@ -608,15 +608,15 @@ header {
 	  width: 45%;
 	  h4 {
 		text-transform: uppercase;
-		color: $tertiary;
-		font: normal normal 20px/40px $lato;
+		color: $main;
+		font: normal normal 20px/40px $quicksand;
 	  }
 	  h2.heading-text {
-		font: normal bold 32px/35px $latobold;
+		font: normal bold 32px/35px $quicksandBold;
 		max-width: 500px;
 	  }
 	  > p {
-		font: normal normal 16px/21px $metropolis;
+		font: normal normal 16px/21px $quicksand;
 		padding: 16px 0;
 		border-bottom: 1.75px solid $borderColor;
 	  }
@@ -630,20 +630,20 @@ header {
 			border-bottom: 1.75px solid $borderColor;
 			.data-icon {
 			  padding: 15px 15px 12px 15px;
-			  background-color: $tertiary;
+			  background-color: $main;
 			  display: inline-block;
 			  clip-path: circle();
 			  font-size: 20px;
-			  color: $primary;
+			  color: $white;
 			}
 			.data-info {
 			  max-width: 300px;
 			  margin-left: 15px;
 			  > p {
-				font: normal normal 16px/24px $lato;
+				font: normal normal 16px/24px $quicksand;
 			  }
 			  > strong {
-				font: normal bold 18px/20px $latobold;
+				font: normal bold 18px/20px $quicksandBold;
 				text-transform: capitalize;
 			  }
 			}
@@ -651,7 +651,7 @@ header {
   
 		  .bottom-text {
 			margin-top: 20px;
-			font: normal normal 16px/20px $metropolis;
+			font: normal normal 16px/20px $quicksand;
 			width: 100%;
 			padding: 0 5px;
 		  }
@@ -666,20 +666,20 @@ header {
 	padding: 60px 10px;
 	margin: 120px 0;
 	.app-info {
-	  color: $primary;
+	  color: $white;
 	  > span {
 		text-transform: uppercase;
-		font: normal normal 18px/20px $lato;
+		font: normal normal 18px/20px $quicksand;
 	  }
   
 	  > h3 {
-		font: normal bold 35px/40px $latobold;
+		font: normal bold 35px/40px $quicksandBold;
 		max-width: 500px;
 		margin: 16px 0;
 	  }
   
 	  > p {
-		font: normal normal 16px/22px $metropolis;
+		font: normal normal 16px/22px $quicksand;
 		max-width: 550px;
 		margin-top: 20px;
 	  }
@@ -692,13 +692,13 @@ header {
 		  font-size: 16px;
 		  margin-right: 10px;
 		  z-index: 1;
-		  border: 2px solid $primary;
-		  color: $secondary;
+		  border: 2px solid $white;
+		  color: $black;
 		  &::before {
-			background-color: $primary;
+			background-color: $white;
 		  }
 		  &:hover {
-			color: $primary;
+			color: $white;
 		  }
   
 		  i {
@@ -707,7 +707,7 @@ header {
 			margin-top: 7px;
 		  }
 		  span {
-			font-family: $latobold;
+			font-family: $quicksandBold;
 			display: inline-block;
 			margin-bottom: 7px;
 			margin-left: 4px;
@@ -749,7 +749,7 @@ header {
 		width: 70px;
 		height: 70px;
 		position: relative;
-		color: $primary;
+		color: $white;
 		margin-top: 30px;
   
 		&::before {
@@ -786,11 +786,11 @@ header {
 	  .text-content {
 		margin-top: 40px;
 		h2 {
-		  font: normal bold 20px/40px $latobold;
+		  font: normal bold 20px/40px $quicksandBold;
 		}
   
 		p {
-		  font: normal normal 15px/20px $metropolis;
+		  font: normal normal 15px/20px $quicksand;
 		  padding: 5px 1px;
 		  text-align: center;
 		}
@@ -839,15 +839,15 @@ header {
 	  button {
 		padding: 10px 10px;
 		border: none;
-		background-color: $primary;
+		background-color: $white;
 		position: relative;
 		// margin: 0 3px;
 		cursor: pointer;
 		text-transform: uppercase;
-		font: normal bold 14px/18px $latobold;
+		font: normal bold 14px/18px $quicksandBold;
   
 		&.clicked {
-		  border-bottom: 2px solid $tertiary;
+		  border-bottom: 2px solid $main;
 		}
 	  }
 	}
@@ -857,7 +857,7 @@ header {
 	  width: 100%;
 	  .single-card {
 		max-width: 300px;
-		background-color: $primary;
+		background-color: $white;
 		box-shadow: $shadow;
 		border-radius: 5px;
 		margin: 0 10px;
@@ -882,7 +882,7 @@ header {
 			  position: absolute;
 			  width: 69px;
 			  height: 32px;
-			  background-color: $tertiary;
+			  background-color: $main;
 			  border-radius: 0 0 150px 150px;
 			  bottom: 0;
 			  left: -2px;
@@ -904,7 +904,7 @@ header {
 		  img.card-img {
 			width: 100%;
 			height: 100%;
-			border-bottom: 2px solid $tertiary;
+			border-bottom: 2px solid $main;
 			transition: transform 0.4s ease;
 		  }
 		}
@@ -912,16 +912,16 @@ header {
 		.card-desc {
 		  padding-top: 20px;
 		  h2 {
-			font: normal bold 20px/25px $latobold;
+			font: normal bold 20px/25px $quicksandBold;
 		  }
 		  p {
-			font: normal normal 14px/20px $metropolis;
+			font: normal normal 14px/20px $quicksand;
 		  }
 		  cite {
 			@include flexItems(row, space-between, center, nowrap);
 			margin: 10px 0;
 			// i{
-			//   color: $tertiary;
+			//   color: $main;
 			// }
 		  }
 		  .card-btns {
@@ -934,9 +934,9 @@ header {
 			  padding: 7px 12px;
 			  border: 0;
 			  border-radius: 3px;
-			  font: normal bold 13px $latobold;
-			  background-color: $tertiary;
-			  color: $primary;
+			  font: normal bold 13px $quicksandBold;
+			  background-color: $main;
+			  color: $white;
 			}
 		  }
 		}
@@ -958,7 +958,7 @@ header {
 	  .category-item {
 		text-align: center;
 		// max-width: 200px;
-		background-color: $primary;
+		background-color: $white;
 		box-shadow: 0px 0px 25px 0 #1a1a1a2a;
 		padding: 45px 45px;
 		border-radius: 12px;
@@ -974,14 +974,14 @@ header {
   
 		i {
 		  display: block;
-		  color: $tertiary;
+		  color: $main;
 		  margin-bottom: 20px;
 		  font-size: 30px;
 		}
   
 		b {
 		  display: block;
-		  font: normal bold 18px/20px $lato;
+		  font: normal bold 18px/20px $quicksand;
 		  text-transform: capitalize;
 		}
 	  }
@@ -994,9 +994,9 @@ header {
 	  text-align: center;
 	  margin-bottom: 15px;
 	  h1 {
-		font: normal bold 27px/30px $latobold;
+		font: normal bold 27px/30px $quicksandBold;
 		span {
-		  color: $tertiary;
+		  color: $main;
 		}
 	  }
 	}
@@ -1019,7 +1019,7 @@ header {
   
   .page-bottom {
 	margin-top: 120px;
-	color: $primary;
+	color: $white;
 	background-color: $footerColor;
 	padding: 20px 0;
 	.bottom-inner {
@@ -1030,11 +1030,11 @@ header {
 		border-bottom: 1px solid $footerBorder;
 		.newsletter-cta {
 		  h3 {
-			font: normal bold 25px/45px $latobold;
+			font: normal bold 25px/45px $quicksandBold;
 			text-transform: capitalize;
-			color: $primary;
+			color: $white;
 			span {
-			  color: $tertiary;
+			  color: $main;
 			}
 		  }
 		}
@@ -1047,15 +1047,15 @@ header {
 			  padding: 20px 20px;
 			  padding-top: 20px - 5px;
 			  border-radius: 4px 0 0 4px;
-			  border: 2px solid $primary;
+			  border: 2px solid $white;
 			  border-right: none;
-			  font: normal normal 16px $lato;
+			  font: normal normal 16px $quicksand;
 			  min-width: 500px;
-			  color: $primary;
+			  color: $white;
 			  background-color: transparent;
 			  &::placeholder {
-				font: normal normal 16px $lato;
-				color: $primary;
+				font: normal normal 16px $quicksand;
+				color: $white;
 			  }
 			}
   
@@ -1064,12 +1064,12 @@ header {
 			  display: inline-block;
 			  border-left: none;
 			  border-radius: 0 4px 4px 0;
-			  border-color: $primary;
+			  border-color: $white;
 			  position: absolute;
 			  height: 100%;
 			  padding-top: 18px;
-			  background-color: $primary;
-			  color: $secondary;
+			  background-color: $white;
+			  color: $black;
 			}
 		  }
 		}
@@ -1087,7 +1087,7 @@ header {
   
 		  .about-col {
 			p {
-			  font: normal normal 16px/20px $metropolis;
+			  font: normal normal 16px/20px $quicksand;
 			  margin-top: 10px;
 			}
   
@@ -1102,7 +1102,7 @@ header {
 				  width: 42.5px;
 				  text-align: center;
 				  i {
-					color: $primary;
+					color: $white;
 					font-size: 20px;
 					display: inline-block;
 					transition: transform 0.4s ease;
@@ -1121,7 +1121,7 @@ header {
 		  .quick-links {
 			h4 {
 			  text-transform: uppercase;
-			  font: normal bold 18px/20px $latobold;
+			  font: normal bold 18px/20px $quicksandBold;
 			  margin-bottom: 12.5px;
 			}
   
@@ -1129,8 +1129,8 @@ header {
 			  li {
 				line-height: 30px;
 				a {
-				  font: normal normal 16px/20px $lato;
-				  color: $primary;
+				  font: normal normal 16px/20px $quicksand;
+				  color: $white;
   
 				  &:hover {
 					text-decoration: underline;
@@ -1143,7 +1143,7 @@ header {
 		  .contact-col {
 			h4 {
 			  text-transform: uppercase;
-			  font: normal bold 18px/20px $latobold;
+			  font: normal bold 18px/20px $quicksandBold;
 			  margin-bottom: 12.5px;
 			}
   
@@ -1159,7 +1159,7 @@ header {
 				}
   
 				p {
-				  font: normal normal 16px/20px $lato;
+				  font: normal normal 16px/20px $quicksand;
 				  margin-left: 10px;
 				}
 			  }
@@ -1179,6 +1179,6 @@ header {
   //JS CLASSES
   .current {
 	bottom: -2px;
-	color: $tertiary;
+	color: $main;
   }
   

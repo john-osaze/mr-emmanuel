@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 function Home() {
   return (
 	<div>
-		<Footer />
 		<Navbar />
+		<Footer />
 	</div>
   )
 }
 
-export default Home
+export default Home;

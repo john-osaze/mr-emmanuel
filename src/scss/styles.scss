@@ -1,3 +1,4 @@
+@import "./partials/fonts";
 @import "./partials/variables";
 @import "./partials/mixins";
 @import "./partials/home";
@@ -30,7 +31,7 @@
   
   a{
 	text-decoration: none;
-	color: $secondary;
+	color: $black;
   }
   
   ul, ol{
@@ -50,23 +51,23 @@
   }
   
   ::selection{
-	color: $primary;
-	background-color: lighten($tertiary, 5%);
+	color: $white;
+	background-color: lighten($main, 5%);
   }
   
   //JS CLASSES
   .nav-offset{
-	background-color: $primary;
+	background-color: $white;
 	box-shadow: 0 5px 25px #11111115;
 	transition: box-shadow 200ms ease-in-out;
   }
   
   .scrolling-active{
-	background-color: $primary;
+	background-color: $white;
 	box-shadow: 0 5px 25px #11111115;
 	transition: box-shadow 200ms ease-in-out;
 	a,i{
-	  color: $secondary !important;
+	  color: $black !important;
 	}
   }
   
@@ -74,6 +75,6 @@
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background: $primary url(../images/preloader.gif) center no-repeat;
+	// background: $white url(../images/preloader.gif) center no-repeat;
 	z-index: 1000;
   }
