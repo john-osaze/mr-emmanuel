@@ -1,14 +1,17 @@
 // Color Variables
 $white: #ffffff;
-$black: #111111;
+$black: #141414;;
 $main: #007bbd;
 $borderColor: #f1f1f1;
+$blackColorBox: #4A4848;
+$darkBox: rgba(33, 33, 33, 0.7);
 $skyblue: #00C5FF;
 $pink: #FF6680;
 $orange: #FF813B;
 
 //Gradient Variable
 $gradient: linear-gradient(45deg, #11998e 0%, #38ef7d 100%);
+$pageGradient: linear-gradient(161.19deg, rgba(19, 19, 19, 0.7) -68.47%, rgba(200, 200, 200, 0.3093) -1.29%, rgba(106, 106, 106, 0) 55.13%, rgba(21, 21, 21, 0.273) 92.03%);
 
 //Shadow Variables
 $shadow: 15px 15px 30px #1414142a;

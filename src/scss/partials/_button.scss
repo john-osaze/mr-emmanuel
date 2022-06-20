@@ -1,0 +1,74 @@
+
+button.btn {
+	background-color: transparent;
+	border-radius: 5px;
+	color: $white;
+	font: normal bold 14px $quicksandBold;
+	margin-right: 12px;
+	padding: 12px 25px;
+	text-transform: uppercase;
+	border: 2px solid $main;
+	cursor: pointer;
+	position: relative;
+
+	&::before {
+		content: "";
+		background-color: $main;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transform: scaleY(1);
+		transform-origin: bottom;
+		transition: transform 0.3s ease;
+	}
+
+	&:hover {
+		color: $main;
+
+		&::before {
+			transform: scaleY(0);
+		}
+	}
+}
+
+.second-button {
+	@extend button.btn;
+	border-color: $pink;
+
+	&::before {
+		background-color: $pink;
+	}
+
+	&:hover {
+		color: $pink;
+	}
+}
+
+.third-button {
+	@extend button.btn;
+	border-color: $orange;
+
+	&::before {
+		background-color: $orange;
+	}
+
+	&:hover {
+		color: $orange;
+	}
+}
+
+.fourth-button {
+	@extend button.btn;
+	border-color: $skyblue;
+
+	&::before {
+		background-color: $skyblue;
+	}
+
+	&:hover {
+		color: $skyblue;
+	}
+}

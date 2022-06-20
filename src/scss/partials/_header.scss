@@ -1,0 +1,67 @@
+.nav {
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background: darken($black, 100%);
+
+
+	&__bar {
+		@include flexItems(row, space-between, center, nowrap);
+		padding: 0px 50px;
+		// border-bottom: 1px solid $borderColor;
+
+		.logo {
+			padding: 5px 0;
+		}
+
+		.nav__group {
+			ul {
+				@include flexItems(row, center, center, wrap);
+
+				li {
+					position: relative;
+					@include transitionEase();
+
+					a {
+						display: inline-block;
+						margin: 0 20px;
+						height: 100%;
+						text-align: center;
+						color: $white;
+						padding: 20px 15px;
+						@include transitionEase();
+
+						&::after {
+							display: none;
+							content: "";
+							width: 100%;
+							position: absolute;
+							height: 3px;
+							background-color: $main;
+							bottom: -20px;
+							left: 0;
+							transform: scaleY(0);
+							transform-origin: bottom;
+							@include transitionEase();
+						}
+
+						&:hover {
+							background: $main;
+
+							&::after {
+								transform: scaleY(1);
+							}
+						}
+					}
+
+					// &:hover{
+					// 	background: $main;
+					// }
+				}
+			}
+		}
+	}
+}
