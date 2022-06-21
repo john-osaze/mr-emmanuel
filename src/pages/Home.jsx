@@ -27,7 +27,7 @@ function Home() {
 
 						<div className="profile__btns">
 							<button type="button" className="btn btn__active">Reach Out</button>
-							<button type="button" className="btn ">Works</button>
+							<button type="button" className="btn">Works</button>
 						</div>
 					</div>
 
@@ -39,7 +39,9 @@ function Home() {
 
 			<section className="preferred__tools container">
 				<div className="title">
-					<p>- Preferred Tools - </p>
+					<p style={{
+						color: "#141414"
+					}}>- Preferred Tools - </p>
 				</div>
 				<div className="preferred__tools__group">
 					<img src={AdobeAI} alt="Adobe AI" />

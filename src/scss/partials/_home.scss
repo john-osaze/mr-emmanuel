@@ -1,0 +1,42 @@
+.profile{
+	padding: 75px 150px !important;
+	background: darken($black, 50%);
+	&__inner{
+		@include flexItems(row, space-between, center, nowrap);
+	}
+
+	&__info{
+		margin-right: 10px;
+		max-width: 55%;
+		p{
+			font: normal normal 18px/30px $quicksand;
+			text-align: right;
+			padding: 15px 0;
+		}
+	}
+
+	&__pic{
+		img{
+			border-radius: 50%;
+			border: 10px solid #36363685;
+		}
+	}
+
+	&__btns{
+		text-align: right;
+	}
+
+}
+
+.preferred__tools{
+	padding: 75px 150px !important;
+	background: $white;
+	&__group{
+		text-align: center;
+		padding: 20px 0;
+		img{
+			margin: 0 50px;
+		}
+	}
+
+}

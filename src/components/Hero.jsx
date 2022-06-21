@@ -4,7 +4,7 @@ import HeroImageHome from "../assets/images/hero-image-home.png";
 function Hero() {
   return (
 	<div>
-		<section className="hero">
+		<section className="hero container">
 				<div className="hero__inner">
 					<div className="hero__img">
 						<img src={HeroImageHome} alt="Hero" />

@@ -41,6 +41,10 @@ a {
 	color: $white;
 }
 
+p, h1, h2, h3{
+	color: $white;
+}
+
 ul,
 ol {
 	list-style: none;
@@ -65,9 +69,16 @@ i {
 	background-color: lighten($main, 5%);
 }
 
+.title{
+	text-align: center;
+	letter-spacing: 3px;
+	font: normal normal 18px/20px $quicksandSemiBold;
+	padding: 30px 0;
+}
+
 //JS CLASSES
 .nav-offset {
-	background-color: $white;
+	background: $white;
 	box-shadow: 0 5px 25px #11111115;
 	transition: box-shadow 200ms ease-in-out;
 }
