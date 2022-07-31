@@ -3,22 +3,18 @@
   font-family: "Quicksand Regular";
   src: url("../assets/fonts/quicksand/Quicksand-Regular.ttf");
 }
-
 @font-face {
   font-family: "Quicksand Bold";
   src: url("../assets/fonts/quicksand/Quicksand-Bold.ttf");
 }
-
 @font-face {
   font-family: "Quicksand Medium";
   src: url("../assets/fonts/quicksand/Quicksand-Medium.ttf");
 }
-
 @font-face {
   font-family: "Quicksand SemiBold";
   src: url("../assets/fonts/quicksand/Quicksand-SemiBold.ttf");
 }
-
 .nav {
   padding: 0;
   position: fixed;
@@ -28,7 +24,6 @@
   z-index: 999;
   background: black;
 }
-
 .nav__bar {
   display: flex;
   flex-direction: row;
@@ -37,11 +32,9 @@
   flex-wrap: nowrap;
   padding: 0px 50px;
 }
-
 .nav__bar .logo {
   padding: 5px 0;
 }
-
 .nav__bar .nav__group ul {
   display: flex;
   flex-direction: row;
@@ -49,12 +42,10 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
 .nav__bar .nav__group ul li {
   position: relative;
   transition: all 0.4s ease;
 }
-
 .nav__bar .nav__group ul li a {
   display: inline-block;
   margin: 0 20px;
@@ -64,7 +55,6 @@
   padding: 20px 15px;
   transition: all 0.4s ease;
 }
-
 .nav__bar .nav__group ul li a::after {
   display: none;
   content: "";
@@ -78,11 +68,9 @@
   transform-origin: bottom;
   transition: all 0.4s ease;
 }
-
 .nav__bar .nav__group ul li a:hover {
   background: #007bbd;
 }
-
 .nav__bar .nav__group ul li a:hover::after {
   transform: scaleY(1);
 }
@@ -100,7 +88,6 @@
   cursor: pointer;
   transition: all 0.4s ease;
 }
-
 .btn:hover {
   color: #ffffff;
   background: transparent;
@@ -110,7 +97,6 @@
   padding: 75px 150px 0px 150px !important;
   background: linear-gradient(161.19deg, rgba(19, 19, 19, 0.7) -68.47%, rgba(200, 200, 200, 0.3093) -1.29%, rgba(106, 106, 106, 0) 55.13%, rgba(21, 21, 21, 0.273) 92.03%);
 }
-
 .hero__inner {
   display: flex;
   flex-direction: row;
@@ -118,15 +104,12 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
 .hero__img img {
   width: 100%;
 }
-
 .hero__info h1 {
   font: normal normal 75px/90px "Quicksand Bold", sans-serif;
 }
-
 .hero__info p {
   font: normal normal 20px/30px "Quicksand Regular", sans-serif;
   margin-top: 20px;
@@ -136,7 +119,6 @@
   padding: 75px 150px !important;
   background: black;
 }
-
 .profile__inner {
   display: flex;
   flex-direction: row;
@@ -144,23 +126,19 @@
   align-items: center;
   flex-wrap: nowrap;
 }
-
 .profile__info {
   margin-right: 10px;
   max-width: 55%;
 }
-
 .profile__info p {
   font: normal normal 18px/30px "Quicksand Regular", sans-serif;
   text-align: right;
   padding: 15px 0;
 }
-
 .profile__pic img {
   border-radius: 50%;
-  border: 10px solid #36363685;
+  border: 10px solid rgba(54, 54, 54, 0.5215686275);
 }
-
 .profile__btns {
   text-align: right;
 }
@@ -169,12 +147,10 @@
   padding: 75px 150px !important;
   background: #ffffff;
 }
-
 .preferred__tools__group {
   text-align: center;
   padding: 20px 0;
 }
-
 .preferred__tools__group img {
   margin: 0 50px;
 }
@@ -247,7 +223,6 @@ i {
 
 .nav-offset {
   background: #ffffff;
-  box-shadow: 0 5px 25px #11111115;
+  box-shadow: 0 5px 25px rgba(17, 17, 17, 0.0823529412);
   transition: box-shadow 200ms ease-in-out;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
