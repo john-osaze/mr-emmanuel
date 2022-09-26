@@ -1,13 +1,10 @@
-import React from 'react';
-import HeroImageHome from "../assets/images/hero-image-home.png";
-
-function Hero() {
+function Hero({ image }) {
   return (
 	<div>
 		<section className="hero container">
 				<div className="hero__inner">
 					<div className="hero__img">
-						<img src={HeroImageHome} alt="Hero" />
+						<img src={ image } alt="Hero" />
 					</div>
 					<div className="hero__info">
 						<h1>Hi! <br />

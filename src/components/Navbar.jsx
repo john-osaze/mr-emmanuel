@@ -1,6 +1,6 @@
-import React from 'react';
 import "../css/styles.css";
 import logo from "../assets/images/logo.png";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -11,27 +11,27 @@ function Navbar() {
 
 		<nav className="nav__bar">
 			<div className="logo">
-				<a href="index.html">
+				<Link to="/">
 					<img src={logo} alt="Logo"/>
-				</a>
+				</Link>
 			</div>
 
 			<div className="nav__group">
 				<ul className="nav__menu">
 					<li className="nav__item">
-						<a href="/" className="nav-link">Home</a>
+						<Link to="/" className="nav-link">Home</Link>
 					</li>
 
 					<li className="nav__item">
-						<a href="/about" className="nav-link">About</a>
+						<Link to="/about" className="nav-link">About</Link>
 					</li>
 
 					<li className="nav__item">
-						<a href="/works" className="nav-link">Works</a>
+						<Link to="/works" className="nav-link">Works</Link>
 					</li>
 
 					<li className="nav__item">
-						<a href="/contact" className="nav-link">Contact</a>
+						<Link to="/contact" className="nav-link">Contact</Link>
 					</li>
 				</ul>
 			</div>

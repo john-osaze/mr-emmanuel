@@ -1,6 +1,5 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import HeroImageHome from "../assets/images/hero-image-home.png";
 import ProfilePic from "../assets/images/profile-pic.png";
 import AdobeAI from "../assets/images/adobe-ai.png";
 import AdobePS from "../assets/images/adobe-ps.png";
@@ -10,8 +9,7 @@ import Figma from "../assets/images/figma.png";
 function Home() {
 	return (
 		<div>
-			<Navbar />
-			<Hero />
+			<Hero image={HeroImageHome}/>
 			<section className="profile container">
 				<div className="title">
 					<p>- Profile - </p>
@@ -19,9 +17,9 @@ function Home() {
 				<div className="profile__inner">
 					<div className="profile__info">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-							Magnam explicabo voluptatum sed dignissimos sequi esse commodi, 
-							praesentium nihil minima est. Dolorum similique nihil quam quos! Explicabo 
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Magnam explicabo voluptatum sed dignissimos sequi esse commodi,
+							praesentium nihil minima est. Dolorum similique nihil quam quos! Explicabo
 							exercitationem iure laboriosam distinctio.
 						</p>
 
@@ -50,7 +48,6 @@ function Home() {
 					<img src={Figma} alt="Figma" />
 				</div>
 			</section>
-			<Footer />
 		</div>
 	)
 }
