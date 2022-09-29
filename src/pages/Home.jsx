@@ -7,9 +7,11 @@ import AdobeXD from "../assets/images/adobe-xd.png";
 import Figma from "../assets/images/figma.png";
 
 function Home() {
+	let pageBannerInfo = <span dangerouslySetInnerHTML={{ __html: "Hi!<br>I'm Emmanuel<br>Onotiemoria" }} />;
+
 	return (
 		<div>
-			<Hero image={HeroImageHome}/>
+			<Hero image={HeroImageHome} textInfo={pageBannerInfo} extraInfo="UI Designer" />
 			<section className="profile container">
 				<div className="title">
 					<p>- Profile - </p>
