@@ -11,7 +11,9 @@ function Home() {
 
 	return (
 		<div>
-			<Hero image={HeroImageHome} textInfo={pageBannerInfo} extraInfo="UI Designer" />
+			<Hero image={HeroImageHome} textInfo={pageBannerInfo} extraInfo="UI Designer" imageStyles={{
+				marginBottom: "-4px"
+			}}/>
 			<section className="profile container">
 				<div className="title">
 					<p>- Profile - </p>
@@ -26,8 +28,8 @@ function Home() {
 						</p>
 
 						<div className="profile__btns">
-							<button type="button" className="btn btn__active">Reach Out</button>
-							<button type="button" className="btn">Works</button>
+							<button type="button" className="btn">Reach Out</button>
+							<button type="button" className="btn btn__active">Works</button>
 						</div>
 					</div>
 

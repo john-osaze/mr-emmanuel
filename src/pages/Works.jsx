@@ -6,8 +6,10 @@ function Works() {
 
     return (
         <div>
-			<Hero image={HeroImageWorks} textInfo={pageBannerInfo} extraInfo="Share your thoughts"/>
-			Works
+			<Hero image={HeroImageWorks} textInfo={pageBannerInfo} extraInfo="Share your thoughts" imageStyles={{
+                marginLeft: "-150px",
+                width: "140%"
+            }}/>
         </div>
     )
 }

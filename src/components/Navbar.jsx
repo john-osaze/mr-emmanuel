@@ -1,8 +1,9 @@
-import "../css/styles.css";
 import logo from "../assets/images/logo.png";
 import { Link } from 'react-router-dom';
+// import { useState } from "react";
 
 function Navbar() {
+
   return (
 	<header className="container nav">
 		{/* <div className="menu-btn">

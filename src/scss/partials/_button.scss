@@ -1,5 +1,5 @@
 .btn {
-	background: $main;
+	background: transparent;
 	border-radius: 35px;
 	color: $white;
 	font: normal normal 15px $quicksandSemiBold;
@@ -7,12 +7,22 @@
 	padding: 12px 25px;
 	padding-top: 10px;
 	text-transform: capitalize;
-	border: 2.5px solid $main;
+	border: 2.5px solid $white;
 	cursor: pointer;
 	@include transitionEase();
 
 	&:hover {
-		color: $white;
-		background: transparent;
+		color: $black;
+		background: $white;
+	}
+
+	&__active{
+		background: $main;
+		border-color: $main;
+
+		&:hover{
+			background: transparent;
+			color: $white;
+		}
 	}
 }

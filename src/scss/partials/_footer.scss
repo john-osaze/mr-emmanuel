@@ -1,3 +1,42 @@
+.pre-footer{
+	text-align: center;
+
+	.top-area{
+		background: $main;
+		padding: 40px 0;
+
+		h1{
+			font-size: 40px;
+			margin-bottom: 10px;
+		}
+		
+		.contact-info{
+			li{
+				a{
+					@include flexItems(row, center, center, nowrap);
+
+					&:first-child{
+						margin-bottom: 20px;
+					}
+
+					i{
+						margin-right: 10px;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+
+	.social-media{
+		margin-top: 25px;
+		a{
+			margin: 0 12px;
+			font-size: 20px;
+		}
+	}
+}
+
 footer {
 	background-color: $black;
 	padding: 50px 0px;

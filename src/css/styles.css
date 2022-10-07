@@ -74,9 +74,12 @@
 .nav__bar .nav__group ul li a:hover::after {
   transform: scaleY(1);
 }
+.nav__bar .nav__group ul li a:focus {
+  background: #007bbd;
+}
 
 .btn {
-  background: #007bbd;
+  background: transparent;
   border-radius: 35px;
   color: #ffffff;
   font: normal normal 15px "Quicksand SemiBold", sans-serif;
@@ -84,17 +87,25 @@
   padding: 12px 25px;
   padding-top: 10px;
   text-transform: capitalize;
-  border: 2.5px solid #007bbd;
+  border: 2.5px solid #ffffff;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 .btn:hover {
-  color: #ffffff;
+  color: #141414;
+  background: #ffffff;
+}
+.btn__active {
+  background: #007bbd;
+  border-color: #007bbd;
+}
+.btn__active:hover {
   background: transparent;
+  color: #ffffff;
 }
 
 .hero {
-  padding: 75px 150px 0px 150px !important;
+  padding: 150px 150px 0px 150px !important;
   background: linear-gradient(161.19deg, rgba(19, 19, 19, 0.7) -68.47%, rgba(200, 200, 200, 0.3093) -1.29%, rgba(106, 106, 106, 0) 55.13%, rgba(21, 21, 21, 0.273) 92.03%);
 }
 .hero__inner {
@@ -153,6 +164,39 @@
 }
 .preferred__tools__group img {
   margin: 0 50px;
+}
+
+.pre-footer {
+  text-align: center;
+}
+.pre-footer .top-area {
+  background: #007bbd;
+  padding: 40px 0;
+}
+.pre-footer .top-area h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.pre-footer .top-area .contact-info li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.pre-footer .top-area .contact-info li a:first-child {
+  margin-bottom: 20px;
+}
+.pre-footer .top-area .contact-info li a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.pre-footer .social-media {
+  margin-top: 25px;
+}
+.pre-footer .social-media a {
+  margin: 0 12px;
+  font-size: 20px;
 }
 
 footer {

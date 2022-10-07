@@ -55,6 +55,10 @@
 								transform: scaleY(1);
 							}
 						}
+
+						&:focus{
+							background: $main;
+						}
 					}
 
 					// &:hover{
