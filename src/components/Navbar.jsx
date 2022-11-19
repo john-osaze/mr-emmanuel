@@ -1,5 +1,5 @@
 import logo from "../assets/images/logo.png";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 // import { useState } from "react";
 
 function Navbar() {
@@ -20,19 +20,19 @@ function Navbar() {
 			<div className="nav__group">
 				<ul className="nav__menu">
 					<li className="nav__item">
-						<Link to="/" className="nav-link">Home</Link>
+						<NavLink to="/" className="nav-link" activeclassname="active" exact="true">Home</NavLink>
 					</li>
 
 					<li className="nav__item">
-						<Link to="/about" className="nav-link">About</Link>
+						<NavLink to="/about" className="nav-link" activeclassname="active" exact="true">About</NavLink>
 					</li>
 
 					<li className="nav__item">
-						<Link to="/works" className="nav-link">Works</Link>
+						<NavLink to="/works" className="nav-link" activeclassname="active" exact="true">Works</NavLink>
 					</li>
 
 					<li className="nav__item">
-						<Link to="/contact" className="nav-link">Contact</Link>
+						<NavLink to="/contact" className="nav-link" activeclassname="active" exact="true">Contact</NavLink>
 					</li>
 				</ul>
 			</div>

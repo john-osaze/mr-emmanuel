@@ -62,9 +62,9 @@ function About() {
 				</div>
 
 				<div className="social-media">
-					<a href="http://whatsapp.com" target="_blank" rel="noreferrer nopener"><BsWhatsapp/></a>
-					<a href="http://linkedin.com" target="_blank" rel="noreferrer nopener"><BsLinkedin/></a>
-					<a href="http://instagram.com" target="_blank" rel="noreferrer nopener"><BsInstagram/></a>
+					<a href="https://whatsapp.com" target="_blank" rel="noreferrer nopener"><BsWhatsapp/></a>
+					<a href="https://linkedin.com" target="_blank" rel="noreferrer nopener"><BsLinkedin/></a>
+					<a href="https://instagram.com" target="_blank" rel="noreferrer nopener"><BsInstagram/></a>
 				</div>
 			</section>
 		</div>

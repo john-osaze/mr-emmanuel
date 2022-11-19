@@ -56,7 +56,7 @@
 							}
 						}
 
-						&:focus{
+						&.active{
 							background: $main;
 						}
 					}
